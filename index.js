@@ -111,7 +111,7 @@ function displayData(urlListData){
     $("#data_info").innerHTML = elementData;
 }
 function removeData(id){
-    const isRemove = confirm("Are you sure?");
+    const isRemove = confirm("You can't revert back");
     if(isRemove){
         urlList.splice(id, 1);
         displayData(urlList);
