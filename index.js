@@ -111,6 +111,9 @@ function displayData(urlListData){
     $("#data_info").innerHTML = elementData;
 }
 function removeData(id){
-    urlList.splice(id, 1);
-    displayData(urlList);
+    const isRemove = confirm("Are you sure?");
+    if(isRemove){
+        urlList.splice(id, 1);
+        displayData(urlList);
+    }    
 }
